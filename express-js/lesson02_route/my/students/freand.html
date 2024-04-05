@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Do'stlar</title>
+</head>
+<body>
+    <h1>Dost ma'lumotlari</h1>
+    <ul>
+        <li><strong>Ism:</strong> <span id="ism"></span></li>
+        <li><strong>Yoshi:</strong> <span id="yoshi"></span></li>
+        <li><strong>Kasbi:</strong> <span id="kasbi"></span></li>                 
+    </ul>
+
+    <script>
+        // Express.js orqali JSON fayldan do'stlar ma'lumotlarini o'qish
+        fetch('/fr.json')
+            .then(response => response.json())
+            .then(dost => {
+                // HTML-ga malumotlarni joylash
+                document.getElementById("ism").innerText = dost.ism;
+                document.getElementById("yoshi").innerText = dost.yoshi;
+                document.getElementById("kasbi").innerText = dost.kasbi;
+            })
+            .catch(error => console.error('Ma\'lumotlar yuklanmadi:', error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body.active {
+  background: #0c0303;
+  color: rgb(237, 223, 223);
+}
+
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.header .logo {
+  width: 100px;
+  height: 80px;
+}
+.header .logo img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+}
+.header .header_title {
+  margin: 10px auto;
+}
+.header .header_title h1 {
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(179, 112, 112);
+}
+.header .list {
+  width: 300px;
+  display: flex;
+}
+.header .list #toggle.active {
+  background: white;
+  box-shadow: inset 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -4px 4px rgba(0, 0, 0, 0.2);
+}
+.header .list #toggle {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #222;
+  transition: 0.5s;
+  box-shadow: inset 0 8px 20px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+.header .list #toggle .indicator {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 25px;
+  height: 30px;
+  background: linear-gradient(to bottom, #444, #222);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5), inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+.header .list #toggle.active .indicator {
+  left: 30px;
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+.categories .list-avto {
+  width: 25%;
+}
+.categories .list-avto ul li {
+  display: block;
+  margin: 5px;
+}
+.categories .list-avto ul li button {
+  text-transform: uppercase;
+  color: rgb(89, 82, 82);
+  transition: 0.3s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.categories .list-avto ul li button:hover {
+  color: rgb(38, 30, 30);
+}
+.categories .corusel-avto {
+  width: 75%;
+  height: 100vh;
+  margin-right: 20px;
+}
+.categories .corusel-avto .atvo-list-corusel {
+  display: flex;
+  overflow: hidden;
+}
+.categories .corusel-avto .atvo-list-corusel ul li {
+  display: inline-block;
+  width: 138px;
+  height: 138px;
+}
+.categories .corusel-avto .atvo-list-corusel ul li img {
+  display: block;
+  width: 100%;
+}
+.categories .model-avto {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.categories .model-avto .photo-avto {
+  width: 60%;
+}
+.categories .model-avto .photo-avto img {
+  display: block;
+  width: 100%;
+}
+.categories .model-avto .characteristic-list {
+  width: 30%;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.categories .model-avto .characteristic-list ul li {
+  display: block;
+  margin: 10px;
+  font-size: 20px;
+}
+.categories .model-avto .characteristic-list ul li ul li button {
+  display: block;
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}/*# sourceMappingURL=main.css.map */
