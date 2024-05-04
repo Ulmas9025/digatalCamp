@@ -1,0 +1,15 @@
+.js-poke-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+li {
+    width: 24%;
+    height: 200px;
+    background-color: #b28a8a;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
